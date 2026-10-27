@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreeStreaming</title>
+
+    <style>
+        body {
+            width: 260px;
+            padding: 18px;
+            margin: 0;
+            background: #111827;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        h2 {
+            margin: 0 0 8px;
+            font-size: 20px;
+        }
+
+        p {
+            color: #9ca3af;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+
+        #statut {
+            padding: 12px;
+            margin: 16px 0;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .actif {
+            background: #064e3b;
+            color: #6ee7b7;
+        }
+
+        .inactif {
+            background: #374151;
+            color: #d1d5db;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 14px;
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+
+        button:hover {
+            opacity: 0.85;
+        }
+
+        #activer {
+            background: #10b981;
+            color: #052e24;
+        }
+
+        #desactiver {
+            background: #374151;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>FreeStreaming</h2>
+    <p>Block the opening of new tabs by websites.</p>
+
+    <div id="statut" class="inactif">
+        Protection disabled
+    </div>
+
+    <button id="activer">Enable</button>
+    <button id="desactiver">Disable</button>
+
+    <script src="popup.js"></script>
+</body>
+</html>
